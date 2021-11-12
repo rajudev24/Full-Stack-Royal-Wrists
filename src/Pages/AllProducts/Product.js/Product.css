@@ -1,0 +1,20 @@
+.product-section{
+    border: 2px solid lightgrey;
+    margin: 10px;
+    padding: 20px;
+}
+
+.order-btn{
+    border: 0px;
+    background-color: rgb(97, 57, 226);
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    font-family: 'Marcellus', serif;
+}
+.order-btn:hover{
+    background-color: lightslategray;
+    color: black;
+}

@@ -1,0 +1,10 @@
+.register-section{
+    background-image: url('https://i.ibb.co/KDSKyZx/pexels-donald-tong-23475.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

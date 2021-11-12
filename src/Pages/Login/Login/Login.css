@@ -1,0 +1,20 @@
+.login-section{
+    background-image: url('https://i.ibb.co/pwRN3k7/pexels-matej-1034425.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.login-form{
+    background-color: rgba(243, 240, 240, 0.52);
+    padding: 40px 0px;
+    width: 50%;
+    color: white;
+    border-radius: 10px;
+}
+.field{
+    color: white !important;
+}

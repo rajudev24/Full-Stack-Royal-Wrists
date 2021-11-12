@@ -1,0 +1,23 @@
+
+.banner-section{
+    background-image: url('https://i.ibb.co/bdD0rzC/pexels-pixabay-162466.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.banner-text{
+    color: rgb(235, 222, 222);
+    font-family: 'Marcellus', serif;
+    font-size: 80px;
+    font-weight: 600;
+}
+
+@media only screen and (max-width: 600px){
+    .banner-text{
+        font-size: 40px;
+    }
+}

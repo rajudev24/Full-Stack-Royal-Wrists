@@ -1,0 +1,14 @@
+.order-section{
+    display: flex;
+    justify-content: space-around;
+}
+.card{
+    /* width: 50%; */
+    padding: 20px;
+}
+.order-section img{
+    padding-top: 20px;
+    height: 300px;
+    width: 300px;
+    margin: 0 auto;
+}
