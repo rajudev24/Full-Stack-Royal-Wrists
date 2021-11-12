@@ -12,7 +12,7 @@ const MakeAdmin = () => {
     
     const addAdmin = e =>{
         const user = {email}
-        fetch(`http://localhost:5000/users`, {
+        fetch(`https://shrouded-savannah-73194.herokuapp.com/users`, {
             method: 'PUT',
             headers: {
                 'content-type' : 'application/json'

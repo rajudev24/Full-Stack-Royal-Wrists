@@ -14,15 +14,16 @@ const Review = () => {
         const newReview = {...review};
         newReview[field] = value;
         setReview(newReview);
-        console.log(newReview);
+        
     }
+
 
     const handleOnSubmit = e => {
         const reviews ={
             ...review,
             displayName: user.name,
         }
-        fetch('http://localhost:5000/reviews',{
+        fetch('https://shrouded-savannah-73194.herokuapp.com/reviews',{
             method: 'POST',
             headers :{
                     'content-type': 'application/json'
@@ -31,7 +32,9 @@ const Review = () => {
         })
         .then(res=> res.json())
         .then(data =>{
-            console.log(data)
+            if(data.insertedId){
+                alert('Thanks for your review!')
+            }
         })
         e.preventDefault();
     }
@@ -40,7 +43,7 @@ const Review = () => {
         <div>
             <h3>Please review our products</h3>
 
-            <from onSubmit={handleOnSubmit}>
+            <form onSubmit={handleOnSubmit}>
                 <div style={{
                     display: 'flex',
                     flexDirection: 'column',
@@ -55,6 +58,7 @@ const Review = () => {
                         defaultValue={user.displayName}
                     />
                     <TextField
+                    required
                         id="outlined-multiline-static"
                         label="Please add your review"
                         multiline rows={4}
@@ -63,6 +67,7 @@ const Review = () => {
                         onBlur={handleOnBlur}
                     />
                     <TextField
+                    required
                         id="outlined-disabled"
                         label="Put rating out of 5"
                         name='rating'
@@ -71,7 +76,7 @@ const Review = () => {
                     />
                     <Button type='submit' variant="contained">Submit</Button>
                 </div>
-            </from>
+            </form>
         </div>
 
     );

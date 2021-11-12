@@ -25,7 +25,7 @@ const Myorders = () => {
   }, [])
 
   const handleCancel = id => {
-    const url = `http://localhost:5000/orders/${id}`
+    const url = `https://shrouded-savannah-73194.herokuapp.com/orders/${id}`
     fetch(url, {
       method: 'DELETE',
     })
