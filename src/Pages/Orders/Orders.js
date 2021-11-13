@@ -38,6 +38,7 @@ const Orders = () => {
             email: user?.email,
             productName: order?.productName,
             price: order?.price,
+            status: 'Pending',
         }
         fetch('https://shrouded-savannah-73194.herokuapp.com/orders', {
             method: 'POST',
@@ -52,7 +53,7 @@ const Orders = () => {
                 
                 alert('Succesfully complete your order!');
                 <CircularProgress></CircularProgress>
-                history.push('/')
+                history.push('/dashboard/myorders')
             }
         })
 

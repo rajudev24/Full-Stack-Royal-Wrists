@@ -17,12 +17,13 @@ const Myorders = () => {
   const [orders, setOrders] = useState([]);
 
   useEffect(() => {
-    const url = `https://shrouded-savannah-73194.herokuapp.com/orders?email=${user.email}`
+    const url = `https://shrouded-savannah-73194.herokuapp.com/orders/email?email=${user?.email}`
     fetch(url)
       .then(res => res.json())
       .then(data => setOrders(data))
 
   }, [])
+  console.log(orders)
 
   const handleCancel = id => {
     const url = `https://shrouded-savannah-73194.herokuapp.com/orders/${id}`
@@ -50,6 +51,7 @@ const Myorders = () => {
               <TableCell align="right">Product Name</TableCell>
               <TableCell align="right">Price</TableCell>
               <TableCell align="right">Email</TableCell>
+              <TableCell align="right">Status</TableCell>
               <TableCell align="right">Cancel Order</TableCell>
             </TableRow>
           </TableHead>
@@ -65,6 +67,7 @@ const Myorders = () => {
                 <TableCell align="right">{row.productName}</TableCell>
                 <TableCell align="right">${row.price}</TableCell>
                 <TableCell align="right">{row.email}</TableCell>
+                <TableCell align="right">{row.status}</TableCell>
                 <TableCell align="right"> <button
                   onClick={() => handleCancel(row._id)}
                   style={{

@@ -1,0 +1,20 @@
+.customer-review{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 40px;
+    
+}
+
+.review-details{
+    border: 1px solid lightsteelblue;
+    margin: 20px;
+    padding: 10px;
+}
+.raitng{
+    color: gold;
+}
+@media only screen and (max-width: 600px){
+    .customer-review{
+        grid-template-columns: repeat(1,1fr);
+    }
+}

@@ -1,0 +1,21 @@
+
+.bottom-banner{
+    background-image: url(https://i.ibb.co/DQV15Mz/pexels-pixabay-277319.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.baner-details{
+    color: white;
+    margin-bottom: 190px;
+}
+.shop-btn{
+    background-color: lightsteelblue;
+    color: black;
+}

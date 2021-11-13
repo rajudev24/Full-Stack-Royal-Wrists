@@ -21,7 +21,8 @@ const Review = () => {
     const handleOnSubmit = e => {
         const reviews ={
             ...review,
-            displayName: user.name,
+            displayName: user?.displayName
+
         }
         fetch('https://shrouded-savannah-73194.herokuapp.com/reviews',{
             method: 'POST',

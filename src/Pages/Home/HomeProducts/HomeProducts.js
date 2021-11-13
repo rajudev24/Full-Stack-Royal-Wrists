@@ -13,7 +13,7 @@ const HomeProducts = () => {
 
     return (
         <div>
-            <h1>THis is profucts {products.slice(0, 6).length} </h1>
+            <h4 className='mt-5 pt-5'>Our Exclusive Watches</h4>
             <div className='products-section'>
                 {
                     products.slice(0, 6).map(product => <HomeProduct

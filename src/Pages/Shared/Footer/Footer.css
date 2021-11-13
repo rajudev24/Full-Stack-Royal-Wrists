@@ -1,0 +1,30 @@
+.footer{
+    background-color: rgb(47, 53, 59);
+    
+    color: white;
+}
+.footer-section{
+    display: flex;
+    justify-content: space-around;
+    padding: 50px 0px;
+}
+.footer-links a{
+    text-decoration: none;
+    margin-right: 10px;
+    color: lightslategray;
+    font-size: 18px;
+    display: flex;
+    flex-direction: row;
+}
+.copyright{
+    margin-bottom: 0px;
+}
+
+@media only screen and (max-width: 600px){
+    .footer-section{
+        flex-direction: column;
+    }
+    .footer-links a{
+        flex-direction: column;
+    }
+}
