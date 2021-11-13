@@ -20,9 +20,9 @@ const HomeReview = () => {
                     reviews.map(review => <div
                         key={review._id}
                         className='review-details'
-                    >
-                        <h4>{review.displayName} </h4>
+                    >   <i class="fas fa-quote-left fa-3x"></i>
                         <h5>{review.review} </h5>
+                        <h4>{review.displayName} </h4>
                         <small>Rating: </small>
                         <Rating
                             readonly

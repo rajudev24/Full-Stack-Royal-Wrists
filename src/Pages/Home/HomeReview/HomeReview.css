@@ -8,7 +8,12 @@
 .review-details{
     border: 1px solid lightsteelblue;
     margin: 20px;
-    padding: 10px;
+    padding: 20px;
+}
+
+.review-details:hover{
+    background-color: black;
+    color: white;
 }
 .raitng{
     color: gold;
