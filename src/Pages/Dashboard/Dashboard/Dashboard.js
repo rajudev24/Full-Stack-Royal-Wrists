@@ -48,22 +48,25 @@ function Dashboard(props) {
     };
 
     const drawer = (
-        <div style={{
-            backgroundColor: 'lightblue'
-        }}>
+        <div >
 
-            <Toolbar />
+            <Toolbar
+                style={{
+                    backgroundColor: '#9700F0',
+                }}
+            />
             <div style={{
                 display: 'flex',
                 flexDirection: 'column',
-
+                backgroundColor: '#9700F0',
+                color: 'white'
             }}>
                 <NavLink to='/home'
                     style={{
                         marginRight: '45px',
                         textDecoration: 'none',
-                        color: 'black',
-                        fontSize: '15px',
+                        color: 'white',
+                        fontSize: '20px',
                         // backgroundColor: 'lightGray',
                         borderRadius: '5px',
                         padding: '8px'
@@ -73,8 +76,8 @@ function Dashboard(props) {
                     style={{
                         marginRight: '45px',
                         textDecoration: 'none',
-                        color: 'black',
-                        fontSize: '15px',
+                        color: 'white',
+                        fontSize: '20px',
                         // backgroundColor: 'lightGray',
                         borderRadius: '5px',
                         padding: '8px'
@@ -83,19 +86,19 @@ function Dashboard(props) {
 
                 {!admin &&
                     <div
-                    style={{
-                        display: 'flex',
-                        flexDirection: 'column',
-        
-                    }}
+                        style={{
+                            display: 'flex',
+                            flexDirection: 'column',
+
+                        }}
                     >
 
                         <NavLink to={`${url}/myorders`}
                             style={{
                                 marginRight: '45px',
                                 textDecoration: 'none',
-                                color: 'black',
-                                fontSize: '15px',
+                                color: 'white',
+                        fontSize: '20px',
                                 // backgroundColor: 'lightGray',
                                 borderRadius: '5px',
                                 padding: '8px'
@@ -105,8 +108,8 @@ function Dashboard(props) {
                             style={{
                                 marginRight: '45px',
                                 textDecoration: 'none',
-                                color: 'black',
-                                fontSize: '15px',
+                                color: 'white',
+                        fontSize: '20px',
                                 // backgroundColor: 'lightGray',
                                 borderRadius: '5px',
                                 padding: '8px'
@@ -116,11 +119,11 @@ function Dashboard(props) {
                             style={{
                                 marginRight: '45px',
                                 textDecoration: 'none',
-                                color: 'black',
-                                fontSize: '15px',
+                                color: 'white',
+                        fontSize: '20px',
                                 // backgroundColor: 'lightGray',
                                 borderRadius: '5px',
-                                padding: '8px'
+                                padding: '5px'
                             }}
                         > Payment</NavLink>
                     </div>
@@ -131,15 +134,15 @@ function Dashboard(props) {
                         style={{
                             display: 'flex',
                             flexDirection: 'column',
-
+                            
                         }}
                     >
                         <NavLink to={`${url}/manageorders`}
                             style={{
                                 marginRight: '45px',
                                 textDecoration: 'none',
-                                color: 'black',
-                                fontSize: '15px',
+                                color: 'white',
+                        fontSize: '20px',
                                 // backgroundColor: 'lightGray',
                                 borderRadius: '5px',
                                 padding: '8px'
@@ -149,8 +152,8 @@ function Dashboard(props) {
                             style={{
                                 marginRight: '45px',
                                 textDecoration: 'none',
-                                color: 'black',
-                                fontSize: '15px',
+                                color: 'white',
+                        fontSize: '20px',
                                 // backgroundColor: 'lightGray',
                                 borderRadius: '5px',
                                 padding: '8px'
@@ -160,8 +163,8 @@ function Dashboard(props) {
                             style={{
                                 marginRight: '45px',
                                 textDecoration: 'none',
-                                color: 'black',
-                                fontSize: '15px',
+                                color: 'white',
+                        fontSize: '20px',
                                 // backgroundColor: 'lightGray',
                                 borderRadius: '5px',
                                 padding: '8px'
@@ -171,8 +174,8 @@ function Dashboard(props) {
                             style={{
                                 marginRight: '45px',
                                 textDecoration: 'none',
-                                color: 'black',
-                                fontSize: '15px',
+                                color: 'white',
+                        fontSize: '20px',
                                 // backgroundColor: 'lightGray',
                                 borderRadius: '5px',
                                 padding: '8px'
@@ -184,21 +187,13 @@ function Dashboard(props) {
                 <Button style={{
                     marginRight: '45px',
                     textDecoration: 'none',
-                    color: 'black',
-                    backgroundColor: 'lightGray',
+                    color: 'white',
+                    fontSize: '20px',
+                    // backgroundColor: 'lightGray',
                     borderRadius: '5px'
                 }} onClick={logOutUser} color="inherit">Logout</Button>
             </div>
-            <List >
-                {['Inbox', 'Starred', 'Send email', 'Drafts'].map((text, index) => (
-                    <ListItem button key={text}>
-                        <ListItemIcon>
-                            {index % 2 === 0 ? <InboxIcon /> : <MailIcon />}
-                        </ListItemIcon>
-                        <ListItemText primary={text} />
-                    </ListItem>
-                ))}
-            </List>
+
 
         </div>
     );
@@ -210,7 +205,8 @@ function Dashboard(props) {
             <CssBaseline />
             <AppBar
                 style={{
-                    backgroundColor: '#7668'
+                    backgroundColor: '#6122F5',
+                    color: 'white'
                 }}
                 position="fixed"
                 sx={{
@@ -234,12 +230,14 @@ function Dashboard(props) {
                 </Toolbar>
             </AppBar>
             <Box
+
                 component="nav"
                 sx={{ width: { sm: drawerWidth }, flexShrink: { sm: 0 } }}
                 aria-label="mailbox folders"
             >
                 {/* The implementation can be swapped with js to avoid SEO duplication of links. */}
                 <Drawer
+
                     container={container}
                     variant="temporary"
                     open={mobileOpen}
@@ -255,6 +253,7 @@ function Dashboard(props) {
                     {drawer}
                 </Drawer>
                 <Drawer
+
                     variant="permanent"
                     sx={{
                         display: { xs: 'none', sm: 'block' },
@@ -266,6 +265,7 @@ function Dashboard(props) {
                 </Drawer>
             </Box>
             <Box
+
                 component="main"
                 sx={{ flexGrow: 1, p: 3, width: { sm: `calc(100% - ${drawerWidth}px)` } }}
             >
