@@ -3,6 +3,11 @@
     margin: 10px;
     padding: 20px;
 }
+.card:hover{
+    -webkit-box-shadow: 0 8px 6px -6px black;
+    -moz-box-shadow: 0 8px 6px -6px black;
+         box-shadow: 0 8px 6px -6px black;
+}
 
 .order-btn{
     border: 0px;
@@ -17,4 +22,10 @@
 .order-btn:hover{
     background-color: lightslategray;
     color: black;
+}
+.card img{
+    height: 300px;
+    width: 300px;
+    margin: 0 auto;
+    border-radius: 5px;
 }

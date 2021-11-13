@@ -13,7 +13,7 @@ const Products = () => {
     }, [])
     return (
         <div>
-            <h1>This is all products  page {products.length}</h1>
+            <h1 className='mt-5 pt-5'>Our Watches</h1>
             <div className='products-section'>
                 {
                     products.map(product => <Product
