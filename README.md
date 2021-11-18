@@ -1,70 +1,40 @@
-# Getting Started with Create React App
+# Royal Wrists
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Lve Site Link
+###  https://royal-wrists.web.app/
 
-## Available Scripts
+### About the website-
 
-In the project directory, you can run:
+#### This is the Full-Stack Royal Wrists Website||
 
-### `npm start`
+#### Front-End technologies
+* JavaScript
+* React Js
+* Material UI, etc.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+#### Back-End technologies
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+* Node Js
+* Express Js
+* MongoDB, etc.
 
-### `npm test`
+##### Feature of the websote
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+* User able to register on this site using the Email & Password & after successfull register they are able to login.
+* after login they are able to orders the products(without login they are unable to orders)
+* They have option called Dashboard. where they are able to see their order Items, they can able to add review & after add their review they can see the review on Home page Reviews section.
+* If they want they can cancel the orders.
+* In Dashboard have another menu for Admin, but normal user unable to see the menu. It's only admin.
 
-### `npm run build`
+* When admin login then they can see another menu in Dashboard. There are mulitiple option, where they are able to manage order, they are able to manage all products, admin can add the products, admin can delete the product & admin can able to canle users orders.
+* Admin can Upadte product status. when customer orders the products the default status is Pending. The status will be update when Admin change the pending status to shipped just one click on Button.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+* Admin can able to add another admin.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+##### More feature will be added.
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
